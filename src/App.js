@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import CompC from './CompC';
+import {Uprovider} from './useContextone'
+import Register from './RegistratioValid'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Uprovider value="12334">
+        <CompC></CompC>
+      </Uprovider>
+      {/* <Register></Register> */}
     </div>
   );
 }
