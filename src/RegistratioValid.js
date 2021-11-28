@@ -143,11 +143,13 @@ class Register extends Component {
 
     //reading each control from 'controls' array
     this.state.controls.forEach((control) => {
+        console.log("controls",control)
       errors[control] = [];
 
       switch (control) {
         case "email":
           //email can't be blank
+          console.log("this.state[control]",this.state[control])
           if (!this.state[control]) {
             errors[control].push("Email can't be blank");
           }

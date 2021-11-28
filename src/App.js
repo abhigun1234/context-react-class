@@ -3,13 +3,16 @@ import './App.css';
 import CompC from './CompC';
 import {Uprovider} from './useContextone'
 import Register from './RegistratioValid'
+import { UserProvider } from './useContext';
+
 function App() {
   return (
     <div className="App">
-      <Uprovider value="12334">
-        <CompC></CompC>
-      </Uprovider>
-      {/* <Register></Register> */}
+      
+     {/* <UserProvider value="jkhiknjknjknjk">
+          <CompC></CompC>
+     </UserProvider> */}
+    <CompC></CompC>
     </div>
   );
 }
