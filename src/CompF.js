@@ -6,8 +6,9 @@ function CompF(props) {
     const user=useContext(UserConsumer)
     return (
         <div>
-            {/* {user} */}
-            <CompG></CompG>
+            <h1>Recived data via a hooks</h1>
+            {user}
+            {/* <CompG></CompG> */}
         </div>
     );
 }

@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
+import CompF from './CompF';
+import CompK from './CompK';
 
 import {UserConsumer} from './useContext'
 
 class CompE extends Component {
     render() {
         return (
-          <UserConsumer>
+            <div>    <h1>Recived</h1>      <UserConsumer>
               {
               (userName)=>{
                return <div>Hello {userName}</div>
               }
               }
           </UserConsumer>
-        // <CompF></CompF>
+          <CompK></CompK>
+          <CompF></CompF>
+          </div>
+
+         
         );
     }
 }
