@@ -6,7 +6,10 @@ function CompK(props) {
              <UserConsumer>
               {
               (userName)=>{
-               return <div>Hello {userName}</div>
+               return <div>
+                   <h1>Component K recived the data</h1>
+                   Hello {userName}
+                   </div>
               }
               }
           </UserConsumer>

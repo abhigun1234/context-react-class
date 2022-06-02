@@ -7,7 +7,7 @@ import {UserConsumer} from './useContext'
 class CompE extends Component {
     render() {
         return (
-            <div>    <h1>Recived</h1>      <UserConsumer>
+            <div>    <h1>Recived data in component E</h1>      <UserConsumer>
               {
               (userName)=>{
                return <div>Hello {userName}</div>

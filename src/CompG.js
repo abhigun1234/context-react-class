@@ -25,6 +25,7 @@ function CompG(props) {
     const user = useContext(Uconsumer)
     return (
         <div>
+            <h1>Component G</h1>
             {user}
         </div>
     );
