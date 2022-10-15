@@ -5,7 +5,7 @@ class CompC extends Component {
     render() {
         return (
             <div>
-                <UserProvider value="Abhishek">
+                <UserProvider value="raju">
                     <CompD></CompD>
                 </UserProvider>
             </div>
